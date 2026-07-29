@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Combinator Selector</title>
+        <style>
+            /* Descendant Selector */
+            div p {
+                color: red;
+            }
+            /* Child Selector */
+            div > h1 {
+                color: blue;
+            }
+            /* Adjacent Sibling Selector */
+            div + h2 {
+                color: green;
+            }
+            /* General Sibling Selector */
+            div ~ h3 {
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Descendant Selector -->
+        <div>
+            <article>
+                <p>Descendant Selector</p>
+            </article>
+            <p>Descendant Selector</p>
+        </div>
+        <!-- Child Selector -->
+        <div>
+            <article>
+                <h1>Not Child Selector</h1>
+            </article>
+            <h1>Child Selector</h1>
+        </div>
+        <!-- Adjacent Sibling Selector -->
+        <div>
+            <h2>Not Adjacent Sibling Selector</h2>
+        </div>
+        <h2>Adjacent Sibling Selector</h2>
+        <h2>Not Adjacent Sibling Selector</h2>
+        <!-- General Sibling Selector -->
+        <div>
+            <h3>Not General Sibling Selector</h3>
+        </div>
+        <h3>General Sibling Selector</h3>
+        <h3>General Sibling Selector</h3>
+    </body>
+</html>

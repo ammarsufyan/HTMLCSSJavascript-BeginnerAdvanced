@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Counter</title>
+        <style>
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/counter */
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/counter-set */
+            body {
+                counter-set: title 0;
+            }
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/counter-increment */
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/counter-reset */
+            h1 {
+                counter-increment: title 1;
+                counter-reset: subtitle 0;
+            }
+            h2 {
+                counter-increment: subtitle 1;
+            }
+            h1::before {
+                content: counter(title) ". ";
+            }
+            h2::before {
+                content: counter(title) "." counter(subtitle) ". ";
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Title</h1>
+        <h2>Sub Title</h2>
+        <h2>Sub Title</h2>
+        <h2>Sub Title</h2>
+        <h2>Sub Title</h2>
+        <h2>Sub Title</h2>
+
+        <h1>Title</h1>
+        <h2>Sub Title</h2>
+        <h2>Sub Title</h2>
+        <h2>Sub Title</h2>
+
+        <h1>Title</h1>
+        <h2>Sub Title</h2>
+        <h2>Sub Title</h2>
+    </body>
+</html>

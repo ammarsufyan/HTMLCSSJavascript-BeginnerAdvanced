@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Attribute Selector</title>
+        <style>
+            /* [attribute] */
+            a[target] {
+                color: red;
+            }
+            /* [attribute="value"] */
+            a[target="_self"] {
+                color: green;
+            }
+            /* [attribute~="value"] */
+            p[title~="learn"] {
+                color: purple;
+            }
+            /* [attribute|="value"] value or value with - */
+            p[title|="play"] {
+                color: orange;
+            }
+            /* [attribute^="value"] start with value */
+            p[title^="read"] {
+                color: aqua;
+            }
+            /* [attribute$="value"] end with value */
+            p[title$="watch"] {
+                color: blue;
+            }
+            /* [attribute*="value"] include value any position */
+            p[title*="cook"] {
+                color: yellowgreen;
+            }
+            /* without tag */
+            [title*="sleep"] {
+                color: plum;
+            }
+            /* with class */
+            .wow[title*="shock"] {
+                color: chocolate;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- [attribute] -->
+        <a href="" target="_blank">With target</a>
+        <!-- [attribute="value"] -->
+        <a href="" target="_self">With target value</a>
+        <!-- [attribute~="value"] -->
+        <p title="learn programming">With ~value</p>
+        <p title="learnprogramming">Without ~value</p>
+        <!-- [attribute|="value"] -->
+        <p title="play">With |value</p>
+        <p title="play-football">With - |value</p>
+        <p title="play football">WIthout |value</p>
+        <!-- [attribute^="value"] -->
+        <p title="read books">Start with value</p>
+        <p title="books read">Not start with value</p>
+        <!-- [attribute$="value"] -->
+        <p title="movies watch">End with value</p>
+        <p title="watch movies">Not end with value</p>
+        <!-- [attribute*="value"] -->
+        <p title="cook egg">Include value</p>
+        <p title="egg cook">Include value</p>
+        <p title="egg">Not include value</p>
+        <!-- without tag -->
+        <p title="sleep">Without tag</p>
+        <!-- with class -->
+        <p title="shock" class="wow">shock</p>
+    </body>
+</html>

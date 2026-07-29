@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Box Model</title>
+        <style>
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/padding */
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/margin */
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/height */
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/width */
+            body {
+                padding: 0px;
+                margin: 0px;
+            }
+            div {
+                padding: 0px;
+                margin: 0px;
+            }
+            p {
+                padding: 0px;
+                margin: 0px;
+                text-align: justify;
+            }
+            .article-1 {
+                /* padding/margin: top right bottom left */
+                padding: 10px 20px 10px 20px;
+                margin: 10px 20px;
+                height: 200px;
+                width: 200px;
+                background-color: blue;
+            }
+            .article-2 {
+                padding: 10px 20px;
+                /* margin: choose the highest if crossing with another margin*/
+                margin: 20px 20px;
+                height: 300px;
+                width: 200px;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="article-1">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et dignissimos aliquam
+                animi pariatur adipisci temporibus laudantium maxime asperiores cupiditate, vel cum.
+                In nostrum delectus ullam natus libero exercitationem magnam voluptate!
+            </p>
+        </div>
+        <div class="article-2">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iure deserunt
+                doloribus architecto voluptate at quia temporibus aut, voluptatibus facilis vero
+                voluptates, eius amet odio eaque hic nam cum nobis.
+            </p>
+        </div>
+    </body>
+</html>

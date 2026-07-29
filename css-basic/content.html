@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Content</title>
+        <style>
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/content */
+            .content {
+                /* content: url(assets/wood.jpg); */
+            }
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_pseudo-elements */
+            .content::before {
+                content: "[BEFORE]";
+            }
+            .content::after {
+                content: "[AFTER]";
+            }
+        </style>
+    </head>
+    <body>
+        <p class="content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quos eos totam,
+            perspiciatis quibusdam provident, nulla in ipsum libero maxime atque illo error, ab esse
+            blanditiis hic sequi repellendus enim.
+        </p>
+    </body>
+</html>
