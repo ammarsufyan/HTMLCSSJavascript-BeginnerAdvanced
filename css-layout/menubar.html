@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Menu Bar - Display None</title>
+        <style>
+            .menubar {
+                display: inline-block;
+            }
+            .menu {
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                color: black;
+                background-color: aqua;
+            }
+            .menulist {
+                z-index: 1;
+                display: none;
+                position: absolute;
+                background-color: aqua;
+            }
+            .menulist a {
+                display: block;
+                padding: 10px;
+                color: black;
+                text-decoration: none;
+            }
+            .menulist a:hover {
+                background-color: pink;
+            }
+            .menubar:hover .menu {
+                background-color: pink;
+            }
+            .menubar:hover .menulist {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menubar">
+            <button class="menu">Social Media</button>
+            <div class="menulist">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Tiktok</a>
+                <a href="#">Youtube</a>
+            </div>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam possimus eum hic
+            ipsum natus! Ullam consequatur nisi saepe ipsa explicabo non. Aspernatur error
+            blanditiis optio iusto? Itaque, quibusdam tempore.
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem error vel esse a
+            laborum quasi libero iure quia architecto distinctio voluptas, numquam nostrum magnam
+            veritatis rem non nisi. Eos, quos.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi unde tempore cumque earum
+            minima accusantium dolore temporibus dolorem consectetur explicabo quidem, veniam fuga
+            deleniti a animi ex incidunt soluta libero.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quo mollitia in labore
+            totam enim ullam cumque ipsam dolorem! Dolorem neque adipisci non! Reiciendis omnis id
+            quis consequatur. Voluptate, in.
+        </p>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flexbox - Order</title>
+        <style>
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/display */
+            .container {
+                display: flex;
+            }
+            .content {
+                padding: 10px;
+                margin: 10px;
+                width: 200px;
+                border: 2px solid black;
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/order -->
+            <div class="content" style="order: 3">
+                <h1>Heading 3</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quasi nobis cum
+                    deserunt soluta possimus optio est, enim sunt ipsa perspiciatis molestiae magni,
+                    explicabo porro! Dicta corporis quaerat dolorum placeat!
+                </p>
+            </div>
+            <div class="content" style="order: 1">
+                <h1>Heading 1</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quasi nobis cum
+                    deserunt soluta possimus optio est, enim sunt ipsa perspiciatis molestiae magni,
+                    explicabo porro! Dicta corporis quaerat dolorum placeat!
+                </p>
+            </div>
+            <div class="content" style="order: 2">
+                <h1>Heading 2</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quasi nobis cum
+                    deserunt soluta possimus optio est, enim sunt ipsa perspiciatis molestiae magni,
+                    explicabo porro! Dicta corporis quaerat dolorum placeat!
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries */
+/* https://www.w3.org/TR/CSS21/media.html */
+/* https://web.dev/learn/design/media-features */
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+
+@media all {
+    .container {
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}
+
+@media screen and (min-width: 10px) and (max-width: 500px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content {
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .content {
+        background-color: aqua;
+    }
+}
